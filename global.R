@@ -29,6 +29,7 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 #global.R
+
 library(tidyverse)
 library(shiny)
 library(shinythemes)
@@ -37,7 +38,7 @@ library(lubridate)
 library(ggthemes)
 library(shinyjs)
 library(ggrepel)
-
+library(DT)
 
 
 #A function to allow for the shiny theme to be changed in session. This is used

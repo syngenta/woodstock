@@ -98,10 +98,10 @@ Woodstock_sidebar_panel <- sidebarPanel(
   dateRangeInput(
     'dateRange',
     label = 'Date range input:',
-    start = "2016-01-01",
-    end = "2016-12-31",
-    min = "2016-01-01",
-    max = "2017-12-31",
+    start = as.Date("2020-01-01"),
+    end = as.Date("2020-12-31"),
+    min = as.Date("2015-01-01"),
+    max = as.Date("2021-12-31"),
     format = "M-dd" # to show that year doesn't matter
   ),
   #checkboxInput('hasPeriod',

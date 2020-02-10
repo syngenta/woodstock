@@ -31,7 +31,7 @@
 
 #display calculated data in MyTable()
 output$MyTable <-
-  renderDataTable(options = list(
+  DT::renderDataTable(options = list(
     pageLength = 10,
     search.smart = T,
     searching = FALSE

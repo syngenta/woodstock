@@ -83,7 +83,7 @@ Woodstock_main_panel <- mainPanel(
                            "Aggregated data describing average temperature will appear here once the \"Calculate\" button has been pressed"
                          ))
       ),
-      dataTableOutput('MyTable'),
+      DT::dataTableOutput('MyTable'),
       br(),
       #Download button only appears after button is pressed for UX
       conditionalPanel(
