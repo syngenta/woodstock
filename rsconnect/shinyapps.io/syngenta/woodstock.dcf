@@ -1,0 +1,10 @@
+name: woodstock
+title:
+username:
+account: syngenta
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1787380
+bundleId: 2789074
+url: https://syngenta.shinyapps.io/woodstock/
+when: 1581349591.77192
