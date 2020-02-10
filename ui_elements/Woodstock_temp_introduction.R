@@ -68,6 +68,7 @@ tagList(
   # ),
   h4("Contacts"),
   "Developed by Michael Bird in 2017",
+  tags$a(href="https://github.com/Syngenta/woodstock", "Browse the source code on GitHub"),
   #HTML("<p>Developed by Michael Bird<sup><i class=\"fa fa-resistance\"></i></sup> in 2017 </p>"),
   br(),
   "Email:",

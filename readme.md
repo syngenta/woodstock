@@ -15,7 +15,7 @@ Woodstock is and will be distributed on a free to use basis subject to the condi
 
 ## How do I get Woodstock?
 
-A copy of woodstock is hosted on ShinyApps.io LINK HERE MICHAEL. If the link is not working, please raise an issue on the github issues page. You can also contact open.publishing@syngenta.com
+A copy of woodstock is hosted on [ShinyApps.io](https://syngenta.shinyapps.io/woodstock/) . If the link is not working, please raise an issue on the github issues page. You can also contact open.publishing@syngenta.com
 
 Alternativly you can clone this repository and run Woodstock locally with a local install of R
 
