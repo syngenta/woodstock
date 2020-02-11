@@ -1,3 +1,6 @@
+<div align="center">
+<img src="https://github.com/Syngenta/woodstock/raw/master/www/rain_icon.png" width="200" height="200" />
+</div>
 # Woodstock
 
 This is the git repository for Woodstock. Woodstock (or The Rainfall Tool to some) is a tool developed to support crop protection risk assessments for birds and mammals. Woodstock does this by providing percentile statistics about rain and temperature for time periods that occur in the standard FOCUS weather data files (FOCUS Groundwater and Surface Water scenarios).
