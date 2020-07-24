@@ -1,5 +1,5 @@
 
-# Copyright Syngenta Limited 20nn
+# Copyright Syngenta Limited 2020
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or (at
@@ -31,7 +31,7 @@
 tagList(
   h4("This Tool"),
   #This text was written by Roger Murfitt
-  "This tool was developed in Syngenta to support risk assessments for Birds and Mammals. It aims to provide information on typical rainfall amounts and temperature averages for locations in Europe for consideration with seed residue field trials dissipation data. Data sources are FOCUS Weather Data files.",
+  "This tool was developed in Syngenta to support risk assessments for Birds and Mammals. It aims to provide experts with information on typical rainfall amounts and temperature averages for locations in Europe for consideration with seed residue field trials dissipation data. Data sources are FOCUS Weather Data files.",
   hr(),
   h4("Getting Started"),
   #The following html makes an ordered list of instructions.
@@ -41,39 +41,32 @@ tagList(
     "</li><li>",
     "Enter the date range you are interested in. (e.g. crop sowing period)",
     "</li><li>",
-    "Set a time period (DAA) you are interested in (the default is set to the date range specified above)",
+    "Set a day period (DAA) you are interested in (the default is set to the date range specified above)",
     "</li><li>",
     "(optional) Enter an observed rainfall in mm",
     "</li><li>",
     "Hit the <i class=\"fa fa-refresh\"></i> <b>Calculate</b> button",
     "</li><li>",
-    "Use the: <i class=\"fa fa-table\"></i></sup> <b>Aggregated Data</b>, <i class=\"fa fa-line-chart\"></i></sup> <b>C.D.F.</b>, and <i class=\"fa fa-percent\"></i></sup> <b>Percentile Statistics</b> tabs to view the results"
+    "Use the: <i class=\"fa fa-table\"></i></sup> <b>Aggregated Data</b>, <i class=\"fa fa-line-chart\"></i></sup> <b>Graph</b>, and <i class=\"fa fa-percent\"></i></sup> <b>Percentile Statistics</b> tabs to view the results"
     ,
     "</li></ol>"
   ),
   hr(),
   h4("Notes"),
-  "When a Date Range input goes over the February-March boundary, leap years will be included in the data output. This leads to the Start and End Date being different in leap years compared to non leap years (though the day period remains constant) ",
-  # h4("Known issues and To-Do list"),
-  # HTML(
-  #   "<ol><li>",
-  #   "ISSUE (Medium Priority)- The 'download table' links seem to disappear on seconds runs. WORKAROUND - restart app if link disapears",
-  #   "</li><li>",
-  #   "ISSUE (Low Priority)- The 'Global Percentile' calculation is slow and could easily be optimised",
-  #   "</li><li>",
-  #   "TODO - Add vertical dashed lines to graph for easy reading OR add labels to plotted points",
-  #   "</li><li>",
-  #   "TODO - Add input data used to create output in output files, not just in file name",
-  #   "</li></ol>"
-  # ),
+  "When a Date Range input goes over the February-March boundary, leap years will be included in the data output. This leads to the Start and End Date being different in leap years compared to non leap years (though the day period remains constant). If February 29th is selected as a start or end date in the Date range input, February 28th will be used for non leap years.",
+  br(),
+  tags$a(href = "https://esdac.jrc.ec.europa.eu/projects/focus-dg-sante", "Read about the underlying FOCUS data"),
   h4("Contacts"),
   "Developed by Michael Bird in 2017",
-  tags$a(href="https://github.com/Syngenta/woodstock", "Browse the source code on GitHub"),
+  tags$a(href = "https://github.com/Syngenta/woodstock", "Browse the source code on GitHub"),
   #HTML("<p>Developed by Michael Bird<sup><i class=\"fa fa-resistance\"></i></sup> in 2017 </p>"),
   br(),
   "Email:",
-  code("michael.bird@syngenta.com"),
+  code("open.publishing@syngenta.com"),
   #make a button that auto opens email client with subject heading about this tool
   HTML(
-    "<a href= \"mailto:michael.bird@syngenta.com?Subject=Woodstock%20The%20Rainfall%20Tool:\" target=\"_top\"> <i class=\"fa fa-reply\"></i> </a>"
-  ))
+    "<a href= \"mailto:open.publishing@syngenta.com?Subject=Woodstock%20The%20Rainfall%20Tool:\" target=\"_top\"> <i class=\"fa fa-reply\"></i> </a>"
+  ),
+  h4("Licence"),
+  "Woodstock is made available on a free to use basis subject to the conditions stated in the software licence (GPL v2). By downloading, installing, distributing or using Woodstock you are agreeing to these terms."
+  )

@@ -1,5 +1,5 @@
 
-# Copyright Syngenta Limited 20nn
+# Copyright Syngenta Limited 2020
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or (at
@@ -83,7 +83,7 @@ p <- MyTable %>%
   geom_label_repel(data = na.omit(MyQuan),
                    aes(label=Label,x=x,y=y,color=Percentile),nudge_y = -0.025,nudge_x = nudgeX, show.legend = F)+
   labs(
-    x = paste("Observed rain in a ", input$Period2, "day period"),
+    x = paste("Total observed rain (mm) in a", input$Period2, "day period falling between",format(as.Date(input$dateRange[1]),format="%d %B"), "and",format(as.Date(input$dateRange[2]),format="%d %B")),
     y = "Cumulative distribution",
     title = paste(
       "A Cumulative Distribution Function plot describing rainfall with the following parameters:"

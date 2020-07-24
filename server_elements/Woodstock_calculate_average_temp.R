@@ -1,6 +1,6 @@
 
 
-# Copyright Syngenta Limited 20nn
+# Copyright Syngenta Limited 2020
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or (at
@@ -93,9 +93,10 @@ calculate_average_temp <-
       
       for (i in 1:length(Year.Range)) {
         #S.Date is the start date in the year we are currently iterating over
-        S.Date <- Start.Date - years(year(Start.Date) - Year.Range[i])
+        ##on 24/07/2020, the below two lines were updated to use lubridate's %m-% operator for rolling behavior for leap years
+        S.Date <- Start.Date %m-% years(year(Start.Date) - Year.Range[i])
         #End Date, we do it this way to have correct behavior when start and end dates go over new year
-        E.Date <- End.Date - years(year(Start.Date) - Year.Range[i])
+        E.Date <- End.Date %m-% years(year(Start.Date) - Year.Range[i])
         date.sequence <-
           seq(S.Date, E.Date, by = "day") #get a sequence of dates between S.Date and E.Date, note that this will include leap days
         num.of.periods.yearly <-
